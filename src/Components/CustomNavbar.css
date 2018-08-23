@@ -1,0 +1,31 @@
+nav.navbar, .navbar-default {
+    background-color: #9ff9e1 !important;
+}
+ .navbar-default {
+    background-image: none;
+    border: none;
+    border-radius: 0;
+} 
+.navbar-default .navbar-nav > li > a {
+    color:#917472;
+} 
+.navbar-default .navbar-brand {
+    color: #753737;
+}
+.navbar-default .navbar-toggle {
+    border-color : black;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #753737;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-brand:hover {
+    background-color: transparent;
+}
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+        color: #eabbbb;
+        background-color: transparent;
+}
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+    color:#eabbbb;
+    background-color: transparent;
+}
