@@ -1,5 +1,8 @@
 .jumbotron {
     margin-bottom: 4em;
+    color: black;
+    background-color:#bfefd5;
+    
 }
 .person-wrapper {
     margin-bottom: 2em;
@@ -16,4 +19,7 @@
 }
 h3 {
     margin-bottom: 1em;
+}
+.home-page {
+    background-color: antiquewhite;
 }

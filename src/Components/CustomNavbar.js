@@ -9,7 +9,7 @@ export default class CustomNavbar extends Component {
             <Navbar default collapseOnSelect>
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <Link to='/'>Link to BandCamp</Link>
+                        <Link to='/'>Old Time Honey</Link>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>

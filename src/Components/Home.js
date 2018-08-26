@@ -8,7 +8,7 @@ import Email from './Email';
 export default class Home extends Component {
     render() {
         return (
-            <Grid>
+            <Grid className="home-page">
                 <Socialmedia />
                 <Jumbotron>
                     <h2>Old Time Honey</h2>
