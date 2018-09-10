@@ -3,6 +3,7 @@ import data from './tracks.json';
 import './Music.css'
 import Controls from './Controls';
 import TrackList from './TrackList';
+import { Grid, Row, Col, Image } from 'react-bootstrap';
 
 
 
@@ -69,22 +70,26 @@ class Music extends Component {
         break;
     }
   }
+
   render() {
     return (
-      <div className="App">
-        <div
+      <Grid className="Music">
+        <Row
           className="Artwork"
-          style={{ backgroundImage: "url(" + data.artwork + ")" }}
+        //   style={{ backgroundImage: "Images/lovesongs.jpg" }}
         >
+        <Col xs={12}>
+                        <Image src="Images/lovesongs.jpg" className="AlbumCover"/>
+                    </Col>
           <Controls onClick={this.handleClick} playing={this.state.playing} />
           <audio ref={(audio)=>{this.audioElement = audio}} src={"/songs/"+this.state.currentTrackIndex+".mp3"}/>
-        </div>
+        </Row>
         <TrackList
           currentTrackIndex={this.state.currentTrackIndex}
           selectTrackNumber={this.selectTrackNumber}
         />
-        <div className="MusicCredit">More Music: <a href="https://oldtimehoney.bandcamp.com/">https://oldtimehoney.bandcamp.com/</a></div>
-      </div>
+        <Row className="MusicCredit"><a href="https://oldtimehoney.bandcamp.com/">https://oldtimehoney.bandcamp.com/</a></Row>
+      </Grid>
     );
   }
 }

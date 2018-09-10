@@ -1,20 +1,20 @@
-.App {
-    border-radius: 5px;
+.Music {
+    border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     overflow: hidden;
     width: 280px;
     height: 430px;
   }
-  .App .Artwork {
+  .Music .Artwork {
     width: 280px;
     height: 280px;
     background-size: cover;
     position: relative;
   }
-  .App .Artwork:hover .Controls {
+  .Music .Artwork:hover .Controls {
     background: rgba(41, 23, 32, 0.8);
   }
-  .App .Artwork .Controls {
+  .Music .Artwork .Controls {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -34,55 +34,58 @@
     -webkit-transition: background .125s ease;
     transition: background .125s ease;
   }
-  .App .Artwork .Controls i:hover{
+  .Music .Artwork .Controls i:hover{
       cursor:pointer;
   }
-  .App .Artwork .Controls .glyphicon-play,
-  .App .Artwork .Controls .glyphicon-pause {
-    -webkit-transform: scale(2);
-            transform: scale(2);
+  .Music .Artwork .Controls .glyphicon-play,
+  .Music .Artwork .Controls .glyphicon-pause {
+    -webkit-transform: scale(4);
+            transform: scale(4);
   }
-  .App .TrackList {
-    width: 280px;
+  .Music .TrackList {
+    width: 250px;
     height: 120px;
-    background: #4a293a;
-    overflow-y: auto;
+    background: #653a50;
+    overflow-y: scroll;
     position:relative;
   }
-  .App .TrackList li {
+  .Music .TrackList li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding: 10px;
     box-sizing: border-box;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.1);
     font-size: 11px;
     text-transform: uppercase;
     font-weight: 300;
   }
-  .App .TrackList li:hover, .App .TrackList li.selected {
+  .Music .TrackList li:hover, .Music .TrackList li.selected {
     background: #39202d;
     cursor: pointer;
-    color: #D90368;
+    color: #bfefd5;
   }
-  .App .TrackList li:hover .duration {
+  .Music .TrackList li:hover .duration {
     opacity: 1;
   }
-  .App .TrackList li .title {
+  .Music .TrackList li .title {
     margin-left: 10px;
     font-weight: 500;
     letter-spacing: .12em;
   }
-  .App .TrackList li .duration {
+  .Music .TrackList li .duration {
     margin-left: auto;
     opacity: .25;
   }
-  .App .MusicCredit, .App .MusicCredit a{
+  .Music .MusicCredit, .Music .MusicCredit a{
     color:white;
-    padding:10px;
+    padding:1px;
     text-align:center;
     
   }
-  .App .MusicCredit a{
-    color: #D90368;
+  .Music .MusicCredit a{
+    color: rgb(79, 20, 48);
   }
+.AlbumCover {
+    width: 100%;
+}

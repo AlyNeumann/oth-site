@@ -14,6 +14,7 @@ export default class About extends Component {
     render() {
         return (
             <Grid>
+                <Row className="show-grid text-center">Band bio blah blah blah</Row>
                 <Row className="show-grid text-center">
                     <Col xs={12} sm={6} md={3} className="about-person-wrapper">
                         <Image src="Images/tyler.jpg" circle className="about-profile-pic" />

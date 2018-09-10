@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import data from './tracks.json';
+import './Music.css'
 
 export default class TrackList extends Component {
     constructor(props) {
