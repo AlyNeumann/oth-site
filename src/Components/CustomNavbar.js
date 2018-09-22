@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './CustomNavbar.css';
 
@@ -9,7 +9,7 @@ export default class CustomNavbar extends Component {
             <Navbar default collapseOnSelect>
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <Link to='/'>Old Time Honey</Link>
+                        <Link to='/'>Old Time Honey<Image src="Images/beeClear.png" style={{ width: 50 }}/></Link>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>
@@ -29,6 +29,9 @@ export default class CustomNavbar extends Component {
                     </NavItem>
                     <NavItem eventKey={5} componentClass={Link} to='/shows' href='/shows'>
                     Shows
+                    </NavItem>
+                    <NavItem eventKey={6} componentClass={Link} to='/epk' href='/epk'>
+                    EPK
                     </NavItem>
                     </Nav>
                 </Navbar.Collapse>

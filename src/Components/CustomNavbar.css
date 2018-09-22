@@ -10,7 +10,8 @@ nav.navbar, .navbar-default {
     color:#917472;
 } 
 .navbar-default .navbar-brand {
-    color: #753737;
+    color: black;
+    font-family: 'Limelight', cursive;
 }
 .navbar-default .navbar-toggle {
     border-color : black;
@@ -29,3 +30,10 @@ nav.navbar, .navbar-default {
     color:#eabbbb;
     background-color: transparent;
 }
+.navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  .navbar-brand>img {
+    padding: 7px 14px;
+  }

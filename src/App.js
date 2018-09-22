@@ -6,7 +6,9 @@ import About from './Components/About';
 import Gallery from './Components/Gallery';
 import Music from './Components/Music';
 import Shows from './Components/Shows';
+import Epk from './Components/Epk';
 import Navbar from './Components/CustomNavbar';
+
 
 
 class App extends Component {
@@ -20,6 +22,7 @@ class App extends Component {
           <Route path='/gallery' component={Gallery} />
           <Route path='/music' component={Music} />
           <Route path='/shows' component={Shows} />
+          <Route path='/epk' component={Epk} />
         </div>
       </Router>
     )
