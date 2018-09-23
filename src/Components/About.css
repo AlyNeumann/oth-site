@@ -4,7 +4,39 @@
 .about-profile-pic {
     width: 50%;
     align-items: center;
+    padding:1px;
+    border:1px solid #636D67;
+    -webkit-animation: fadein 1.7s;
+    -webkit-animation-timing-function: cubic-bezier(1, -0.09, .91, .76)
 }
+@keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 h3 {
     margin-bottom: 1em;
+}
+#collapsible-panel {
+    background-color: grey;
+    font-family: 'Poppins', sans-serif;
+}
+.panel-title {
+    background-color: grey; 
+    border-radius: 20%;
+    border: thick double #9ECBAC;
+    font-family: 'Limelight', cursive;
+    color: #D7FDEC;
+    padding: 10px;
+    
+}
+.bio  {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+.bio:hover {
+    color: #9ECBAC;
 }

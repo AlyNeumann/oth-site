@@ -20,6 +20,7 @@
     border: black;
     border-radius: 50;
     background-color: #EDE7E7;
+    font-family: 'Special Elite', cursive;
     
 }
 
@@ -34,4 +35,14 @@ h3 {
 h2 {
     font-family: 'Limelight', cursive;
     font-size: 7em;
+    -webkit-animation: fadein 3.1s;
+    -webkit-animation-timing-function: cubic-bezier(1, -0.09, .91, .76)
 }
+@keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

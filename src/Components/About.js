@@ -3,6 +3,7 @@ import { Grid, Row, Col, Image, Clearfix, Panel } from 'react-bootstrap';
 import './About.css';
 import Email from './Email';
 import TypeWriter from './TypeWriter';
+import Socialmedia from './Socialmedia';
 
 export default class About extends Component {
     constructor(props, context) {
@@ -22,11 +23,11 @@ export default class About extends Component {
                         <TypeWriter><h3>Tyler Parent</h3></TypeWriter>
                         <Panel id="collapsible-panel" expanded={this.state.closed}>
                             <Panel.Heading>
-                                <Panel.Title>Upright bass & Voice</Panel.Title>
-                                <Panel.Toggle componentClass="a">Biography</Panel.Toggle>
+                                <Panel.Title className="panel-title">Upright bass & Voice</Panel.Title>
+                                <Panel.Toggle componentClass="a" className="bio" >Biography</Panel.Toggle>
                             </Panel.Heading>
-                            <Panel.Collapse>
-                                <Panel.Body>
+                            <Panel.Collapse >
+                                <Panel.Body >
                                     Anim pariatur cliche reprehenderit, enim eiusmod high life
                                     accusamus terry richardson ad squid. Nihil anim keffiyeh
                                     helvetica, craft beer labore wes anderson cred nesciunt sapiente
@@ -41,7 +42,7 @@ export default class About extends Component {
                         <Panel id="collapsible-panel" expanded={this.state.closed}>
                             <Panel.Heading>
                                 <Panel.Title>Piano, Banjo & Voice</Panel.Title>
-                                <Panel.Toggle componentClass="a">Biography</Panel.Toggle>
+                                <Panel.Toggle componentClass="a" className="bio">Biography</Panel.Toggle>
                             </Panel.Heading>
                             <Panel.Collapse>
                                 <Panel.Body>
@@ -61,7 +62,7 @@ export default class About extends Component {
                         <Panel id="collapsible-panel" expanded={this.state.closed}>
                             <Panel.Heading>
                                 <Panel.Title>Washboard & Voice</Panel.Title>
-                                <Panel.Toggle componentClass="a">Biography</Panel.Toggle>
+                                <Panel.Toggle componentClass="a" className="bio">Biography</Panel.Toggle>
                             </Panel.Heading>
                             <Panel.Collapse>
                                 <Panel.Body>
@@ -79,8 +80,8 @@ export default class About extends Component {
                         <TypeWriter><h3>Olive Bestvader</h3></TypeWriter>
                         <Panel id="collapsible-panel" expanded={this.state.closed}>
                             <Panel.Heading>
-                                <Panel.Title>Violin & Voice</Panel.Title>
-                                <Panel.Toggle componentClass="a">Biography</Panel.Toggle>
+                                <Panel.Title> Violin, Loop & Voice </Panel.Title>
+                                <Panel.Toggle componentClass="a" className="bio">Biography</Panel.Toggle>
                             </Panel.Heading>
                             <Panel.Collapse>
                                 <Panel.Body>
@@ -95,6 +96,7 @@ export default class About extends Component {
                         </Panel>
                     </Col>
                 </Row>
+                <Socialmedia/>
                 <Email />
             </Grid>
         )

@@ -14,3 +14,7 @@
       height:auto;
     }
 }
+.carousel-caption {
+  font-family: 'Special Elite', cursive;
+  color: #EDE7E7;
+}

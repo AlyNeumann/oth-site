@@ -28,7 +28,7 @@ class TypeWriter extends Component {
         const duration = props.duration ? props.duration * 1000 : 3000;
         this.setState({ type: element.type });
         for(let i = 0; i < textArr.length; i++) {
-            await delay(100);
+            await delay(60);
             this.setState({ text: this.state.text + textArr[i] })
         }
     }

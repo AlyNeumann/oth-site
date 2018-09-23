@@ -59,6 +59,7 @@
     font-size: 11px;
     text-transform: uppercase;
     font-weight: 300;
+    font-family: 'Special Elite', cursive;
   }
   .Music .TrackList li:hover, .Music .TrackList li.selected {
     background: #39202d;
@@ -81,6 +82,7 @@
     color:white;
     padding:1px;
     text-align:center;
+    font-family: 'Special Elite', cursive;
     
   }
   .Music .MusicCredit a{

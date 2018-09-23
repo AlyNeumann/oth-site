@@ -4,6 +4,8 @@ import './Music.css'
 import Controls from './Controls';
 import TrackList from './TrackList';
 import { Grid, Row, Col, Image } from 'react-bootstrap';
+import Email from './Email';
+import Socialmedia from './Socialmedia';
 
 
 
@@ -19,15 +21,15 @@ class Music extends Component {
     this.pauseAudio = this.pauseAudio.bind(this);
     this.selectTrackNumber = this.selectTrackNumber.bind(this);
   }
-  playAudio(){
+  playAudio() {
     this.audioElement.load();
     this.audioElement.play();
   }
-  pauseAudio(){
+  pauseAudio() {
     this.audioElement.pause();
   }
-  selectTrackNumber(trackId){
-    this.setState({currentTrackIndex:trackId,playing:true},this.playAudio);
+  selectTrackNumber(trackId) {
+    this.setState({ currentTrackIndex: trackId, playing: true }, this.playAudio);
   }
   handleClick(e) {
     switch (e.target.id) {
@@ -41,10 +43,10 @@ class Music extends Component {
             playing: true,
             currentTrackIndex: currentTrackIndex
           };
-        },this.playAudio);
+        }, this.playAudio);
         break;
       case "pause":
-        this.setState({ playing: false },this.pauseAudio);
+        this.setState({ playing: false }, this.pauseAudio);
         break;
       case "prev":
         this.setState((state, props) => {
@@ -52,9 +54,9 @@ class Music extends Component {
           if (currentIndex <= 0) {
             return null;
           } else {
-            return { playing:true,currentTrackIndex: currentIndex };
+            return { playing: true, currentTrackIndex: currentIndex };
           }
-        },this.playAudio);
+        }, this.playAudio);
         break;
       case "next":
         this.setState((state, props) => {
@@ -62,9 +64,9 @@ class Music extends Component {
           if (currentIndex > data.tracks.length) {
             return null;
           } else {
-            return { playing:true,currentTrackIndex: currentIndex };
+            return { playing: true, currentTrackIndex: currentIndex };
           }
-        },this.playAudio);
+        }, this.playAudio);
         break;
       default:
         break;
@@ -73,22 +75,27 @@ class Music extends Component {
 
   render() {
     return (
-      <Grid className="Music">
-        <Row
-          className="Artwork"
-        //   style={{ backgroundImage: "Images/lovesongs.jpg" }}
-        >
-        <Col xs={12}>
-                        <Image src="Images/lovesongs.jpg" className="AlbumCover"/>
-                    </Col>
-          <Controls onClick={this.handleClick} playing={this.state.playing} />
-          <audio ref={(audio)=>{this.audioElement = audio}} src={"/songs/"+this.state.currentTrackIndex+".mp3"}/>
-        </Row>
-        <TrackList
-          currentTrackIndex={this.state.currentTrackIndex}
-          selectTrackNumber={this.selectTrackNumber}
-        />
-        <Row className="MusicCredit"><a href="https://oldtimehoney.bandcamp.com/">https://oldtimehoney.bandcamp.com/</a></Row>
+      <Grid>
+        <Grid className="Music">
+          <Row
+            className="Artwork"
+          //   style={{ backgroundImage: "Images/lovesongs.jpg" }}
+          >
+            <Col xs={12}>
+              <Image src="Images/lovesongs.jpg" className="AlbumCover" />
+            </Col>
+            <Controls onClick={this.handleClick} playing={this.state.playing} />
+            <audio ref={(audio) => { this.audioElement = audio }} src={"/songs/" + this.state.currentTrackIndex + ".mp3"} />
+          </Row>
+          <TrackList
+            currentTrackIndex={this.state.currentTrackIndex}
+            selectTrackNumber={this.selectTrackNumber}
+          />
+          <Row className="MusicCredit"><a href="https://oldtimehoney.bandcamp.com/">https://oldtimehoney.bandcamp.com/</a></Row>
+
+        </Grid>
+        <Socialmedia />
+        <Email />
       </Grid>
     );
   }

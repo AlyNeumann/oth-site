@@ -14,7 +14,9 @@ export default class Home extends Component {
         return (
             <Grid className="home-page">
                 <Jumbotron>
-                    <h2>Old Time Honey</h2><Image src="Images/beeClear.png" className="logo"/><Image src="Images/beeClear.png" className="logo"/><Image src="Images/beeClear.png" className="logo"/>
+                    <h2>◈ Old Time Honey ◈</h2>
+                    <Image src="Images/beeClear.png" className="logo"/><Image src="Images/beeClear.png" className="logo"/><Image src="Images/beeClear.png" className="logo"/>
+                    
                     <TypeWriter ><h3>New album "Love Songs for Sick People" coming October 12th!</h3></TypeWriter>
                     
                         <Button bsStyle="default" href="https://distrokid.com/hyperfollow/oldtimehoney/eGRR">Pre-Save on Spotify! </Button>

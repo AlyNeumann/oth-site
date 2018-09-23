@@ -37,3 +37,6 @@ nav.navbar, .navbar-default {
   .navbar-brand>img {
     padding: 7px 14px;
   }
+  .navbar-collapse {
+    font-family: 'Poppins', sans-serif;
+  }

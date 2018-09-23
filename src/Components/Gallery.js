@@ -8,7 +8,7 @@ export default class Gallery extends Component{
         <Carousel pauseOnHover="true" wrap="true" className="carousel">
             <Carousel.Item className="carousel-image">
               <img width={900} height={500} alt="900x500" src="Images/carousel1.jpg" />
-              <Carousel.Caption>
+              <Carousel.Caption className="carousel-caption">
                 <h3>First slide label</h3>
                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
               </Carousel.Caption>

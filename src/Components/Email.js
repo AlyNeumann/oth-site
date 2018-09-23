@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { FormGroup, FormControl, ControlLabel } from 'react-bootstrap';
+import './Email.css'
 
 export default class Email extends Component {
     constructor(props, context) {
@@ -32,7 +33,7 @@ export default class Email extends Component {
                     controlId="formBasicText"
                     validationState={this.getValidationState()}
                 >
-                    <ControlLabel>Enter your email to sign up for our mailing list</ControlLabel>
+                    <ControlLabel className="email">Enter your email to sign up for our mailing list</ControlLabel>
                     <FormControl
                         type="text"
                         value={this.state.value}
