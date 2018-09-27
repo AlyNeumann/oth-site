@@ -10,7 +10,7 @@ export default class Shows extends Component {
         return (
             <Grid>
                 <Grid className="schedule">
-                    <Row>
+                    <Row className="show-row">
                         <Col xs={12} sm={6} md={3}>Old Time Honey's Album Launch</Col>
                         <Col xs={12} sm={6} md={3}>Thursday October 11th, 2018</Col>
                         <Col xs={12} sm={6} md={3}>Coop Katacombs, 1635 St Laurent Blvd, Montreal</Col>
@@ -20,7 +20,7 @@ export default class Shows extends Component {
                             </Link>
                         </Col>
                     </Row>
-                    <Row>
+                    <Row className="show-row">
                         <Col xs={12} sm={6} md={3}>Old Time Honey, Weep and Bloom, & Alex Charbonneau</Col>
                         <Col xs={12} sm={6} md={3}>Tuesday September 11th, 2018</Col>
                         <Col xs={12} sm={6} md={3}>Traxide, Fattal, Montreal</Col>
@@ -28,7 +28,7 @@ export default class Shows extends Component {
                             <Button bsStyle="default btn-xs">Event Info</Button>
                         </Link></Col>
                     </Row>
-                    <Row>
+                    <Row className="show-row">
                         <Col xs={12} sm={6} md={3}>Kickdrum Presents Old Time Honey, Eva Foot, Róża</Col>
                         <Col xs={12} sm={6} md={3}>Wednesday September 5th, 2018</Col>
                         <Col xs={12} sm={6} md={3}>Backyard Sessions, Cafe Bland de Blanc 248 rue Villeneuve Ouest

@@ -14,14 +14,25 @@
 }
 .logo {
     width: 7em;
+    animation-name: logomove;
+    animation-duration: 3s;
+}
+@keyframes logomove {
+   from { transform: translateX(900px)}
+   to { transform: translateX(0px)}
 }
 .btn-default {
     background-image: none;
     border: black;
     border-radius: 50;
     background-color: #EDE7E7;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid black;
+    transition: 1s ease-in;
     
+}
+.btn-default:hover {
+    background: #F4CCC3;
 }
 
 .home-page {
@@ -37,6 +48,9 @@ h2 {
     font-size: 7em;
     -webkit-animation: fadein 3.1s;
     -webkit-animation-timing-function: cubic-bezier(1, -0.09, .91, .76)
+}
+h4{
+    font-family: 'Poppins', sans-serif; 
 }
 @keyframes fadein {
     from {

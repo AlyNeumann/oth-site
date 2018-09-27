@@ -76,23 +76,25 @@ class Music extends Component {
   render() {
     return (
       <Grid>
-        <Grid className="Music">
-          <Row
-            className="Artwork"
-          //   style={{ backgroundImage: "Images/lovesongs.jpg" }}
-          >
-            <Col xs={12}>
-              <Image src="Images/lovesongs.jpg" className="AlbumCover" />
-            </Col>
-            <Controls onClick={this.handleClick} playing={this.state.playing} />
-            <audio ref={(audio) => { this.audioElement = audio }} src={"/songs/" + this.state.currentTrackIndex + ".mp3"} />
-          </Row>
-          <TrackList
-            currentTrackIndex={this.state.currentTrackIndex}
-            selectTrackNumber={this.selectTrackNumber}
-          />
-          <Row className="MusicCredit"><a href="https://oldtimehoney.bandcamp.com/">https://oldtimehoney.bandcamp.com/</a></Row>
+        <Grid className="music-container">
+          <Grid className="Music">
+            <Row
+              className="Artwork"
+            //   style={{ backgroundImage: "Images/lovesongs.jpg" }}
+            >
+              <Col xs={12}>
+                <Image src="Images/lovesongs.jpg" className="AlbumCover" />
+              </Col>
+              <Controls onClick={this.handleClick} playing={this.state.playing} />
+              <audio ref={(audio) => { this.audioElement = audio }} src={"/songs/" + this.state.currentTrackIndex + ".mp3"} />
+            </Row>
+            <TrackList
+              currentTrackIndex={this.state.currentTrackIndex}
+              selectTrackNumber={this.selectTrackNumber}
+            />
+            <Row className="MusicCredit"><a href="https://oldtimehoney.bandcamp.com/">https://oldtimehoney.bandcamp.com/</a></Row>
 
+          </Grid>
         </Grid>
         <Socialmedia />
         <Email />

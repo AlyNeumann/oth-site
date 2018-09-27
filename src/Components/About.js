@@ -23,7 +23,7 @@ export default class About extends Component {
                         <TypeWriter><h3>Tyler Parent</h3></TypeWriter>
                         <Panel id="collapsible-panel" expanded={this.state.closed}>
                             <Panel.Heading>
-                                <Panel.Title className="panel-title">Upright bass & Voice</Panel.Title>
+                                <Panel.Title className="panel-title">Upright Bass & Voice</Panel.Title>
                                 <Panel.Toggle componentClass="a" className="bio" >Biography</Panel.Toggle>
                             </Panel.Heading>
                             <Panel.Collapse >
@@ -77,7 +77,7 @@ export default class About extends Component {
                     {/* <Clearfix visible-md-block></Clearfix> */}
                     <Col xs={12} sm={6} md={3} className="about-person-wrapper">
                         <Image src="Images/olive.jpg" circle className="about-profile-pic" />
-                        <TypeWriter><h3>Olive Bestvader</h3></TypeWriter>
+                        <TypeWriter><h3>Olive Bestvater</h3></TypeWriter>
                         <Panel id="collapsible-panel" expanded={this.state.closed}>
                             <Panel.Heading>
                                 <Panel.Title> Violin, Loop & Voice </Panel.Title>

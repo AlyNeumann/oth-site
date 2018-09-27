@@ -4,6 +4,7 @@
     overflow: hidden;
     width: 280px;
     height: 430px;
+    padding-bottom: 10em;
   }
   .Music .Artwork {
     width: 280px;
@@ -90,4 +91,7 @@
   }
 .AlbumCover {
     width: 100%;
+}
+.music-container {
+  padding-bottom: 10em;
 }
