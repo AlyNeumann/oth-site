@@ -14,19 +14,22 @@ export default class Home extends Component {
         return (
             <Grid className="home-page">
                 <Jumbotron>
-                    <h2>◈Old Time Honey◈</h2>
+                    <h2>◈Old Time Honey</h2>
                     <Image src="Images/beeClear.png" className="logo"/><Image src="Images/beeClear.png" className="logo"/><Image src="Images/beeClear.png" className="logo"/>
                     
-                    <TypeWriter ><h3>New album "Love Songs for Sick People" coming October 12th!</h3></TypeWriter>
+                    <TypeWriter ><h3>New album "Love Songs for Sick People" now available!</h3></TypeWriter>
+                    <TypeWriter ><h3>Nouveau album "Love Songs for Sick People" maintenant disponible!</h3></TypeWriter>
                     
-                        <Button bsStyle="default" href="https://distrokid.com/hyperfollow/oldtimehoney/eGRR">Pre-Save on Spotify! </Button>
+                        <Button bsStyle="default" href="https://open.spotify.com/album/0EGPdRzJ517sC1o8rMfZ6Y">Listen on Spotify</Button>
+                        <Button bsStyle="default" href="https://oldtimehoney.bandcamp.com/">Purchase on BandCamp</Button>
                     
                 </Jumbotron>
-                <Row className="show-grid text-center">
-                    <Col xs={12} sm={4} className="person-wrapper">
-                        <Image src="Images/albumlaunch.jpg" className="home-pic" href="https://www.facebook.com/events/191449174843350/"/>
+                {/* <Row>
+                    <Col xs={6} sm={6}  className="person-wrapper">
+                        <Image src="Images/home.jpg" className="home-pic" href="https://oldtimehoney.bandcamp.com/"/>   
                     </Col>
-                </Row>
+                    
+                </Row> */}
                 <Socialmedia />
                 <Email/>
             </Grid>

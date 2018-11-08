@@ -51,5 +51,8 @@ background-color: pink;
     font-family: 'Poppins', sans-serif;
     padding: 10px;
     align-items: center;
-
+}
+.language {
+    padding: 1em;
+    border-bottom: 1px solid black;
 }

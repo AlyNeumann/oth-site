@@ -86,7 +86,7 @@ class Music extends Component {
                 <Image src="Images/lovesongs.jpg" className="AlbumCover" />
               </Col>
               <Controls onClick={this.handleClick} playing={this.state.playing} />
-              <audio ref={(audio) => { this.audioElement = audio }} src={"/songs/" + this.state.currentTrackIndex + ".mp3"} />
+              <audio ref={(audio) => { this.audioElement = audio }} src={"/songs/" + this.state.currentTrackIndex + ".wav"} />
             </Row>
             <TrackList
               currentTrackIndex={this.state.currentTrackIndex}

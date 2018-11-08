@@ -3,18 +3,18 @@
     "artist":"Old Time Honey",
     "artwork":"https://www.websta.one/media/BnWjYgBD0h2",
     "tracks":[
-        {"id":1,"title":"The Fall","duration":"1:43"},
-        {"id":2,"title":"Your Fool","duration":""},
-        {"id":3,"title":"Blue","duration":""},
-        {"id":4,"title":"This World","duration":"3:34"},
-        {"id":5,"title":"Ora so chi sei","duration":""},
-        {"id":6,"title":"Alone","duration":""},
-        {"id":7,"title":"PTSD","duration":""},
-        {"id":8,"title":"Baby Doll","duration":""},
-        {"id":9,"title":"Sick","duration":""},
-        {"id":10,"title":"Another Time","duration":""},
-        {"id":11,"title":"My Good Side","duration":""},
-        {"id":12,"title":"Devil's Daughter","duration":""},
-        {"id":13,"title":"The next fall/Shine on","duration":""}
+        {"id":1,"title":"The Fall","duration":"1:17"},
+        {"id":2,"title":"Your Fool","duration":"4:25"},
+        {"id":3,"title":"Blue","duration":"3:27"},
+        {"id":4,"title":"This World","duration":"3:35"},
+        {"id":5,"title":"Ora So Chie Sei","duration":"3:33"},
+        {"id":6,"title":"Alone","duration":"2:27"},
+        {"id":7,"title":"PTSD","duration":"3:31"},
+        {"id":8,"title":"Baby Doll","duration":"2:49"},
+        {"id":9,"title":"Sick","duration":"3:57"},
+        {"id":10,"title":"Another Time","duration":"4:43"},
+        {"id":11,"title":"My Good Side","duration":"2:55"},
+        {"id":12,"title":"Devil's Daughter","duration":"4:27"},
+        {"id":13,"title":"The Next Fall/Shine On","duration":"4:21"}
     ]
 }

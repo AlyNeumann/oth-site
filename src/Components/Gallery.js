@@ -13,7 +13,7 @@ export default class Gallery extends Component {
             <Carousel.Item className="carousel-image">
               <img width={900} height={500} alt="900x500" src="Images/carousel1.jpg" />
               <Carousel.Caption className="carousel-caption">
-                <h3>Old Time Honey with miss Audrey</h3>
+                <h3>The Band with Audrey</h3>
                 <p>Spring 2018 by Valentina Piras.</p>
               </Carousel.Caption>
             </Carousel.Item>

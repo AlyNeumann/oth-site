@@ -2,6 +2,7 @@
     font-family: 'Poppins', sans-serif;
     padding: 1em;
     padding-bottom: 10em;
+    -webkit-animation: fadein 1s;
 }
 .show-row {
     padding: 1em;

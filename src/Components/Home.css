@@ -10,7 +10,7 @@
     margin-bottom: 2em;
 }
 .home-pic {
-    width: 50em;
+    width: 22em;
 }
 .logo {
     width: 7em;
@@ -45,7 +45,7 @@ h3 {
 }
 h2 {
     font-family: 'Limelight', cursive;
-    font-size: 7em;
+    font-size: 6em;
     -webkit-animation: fadein 3.1s;
     -webkit-animation-timing-function: cubic-bezier(1, -0.09, .91, .76)
 }

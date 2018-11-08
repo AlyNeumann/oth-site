@@ -33,7 +33,7 @@ export default class Email extends Component {
                     controlId="formBasicText"
                     validationState={this.getValidationState()}
                 >
-                    <ControlLabel className="email">Enter your email to sign up for our mailing list</ControlLabel>
+                    <ControlLabel className="email">Enter your email to sign up for our mailing list / Entrée votre address courriel</ControlLabel>
                     <FormControl
                         type="text"
                         value={this.state.value}

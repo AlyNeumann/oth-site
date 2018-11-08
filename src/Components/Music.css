@@ -5,6 +5,7 @@
     width: 280px;
     height: 430px;
     padding-bottom: 10em;
+    -webkit-animation: fadein 1.7s;
   }
   .Music .Artwork {
     width: 280px;

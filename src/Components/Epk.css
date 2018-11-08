@@ -1,4 +1,24 @@
 .imageDL {
     position: relative;
     padding: 1em;
+    border-radius: 12px;
+    
+}
+.imageDLTwo {
+    padding: 1em;
+    position: right;
+    border-radius: 12px;
+}
+.photoset {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    -webkit-animation: fadein 1s;
+}
+.epk-bios {
+    padding:3em;
+}
+.video-player {
+    padding: 3em;
 }
