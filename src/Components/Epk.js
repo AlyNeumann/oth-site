@@ -25,7 +25,7 @@ export default class Epk extends Component {
         return (
             <Grid>
                 <Row className="show-grid text-center">
-                    <Col xs={12} sm={12} md={12} >
+                    <Col xs={12} sm={12} md={12} data-aos="fade-in" data-aos-duration="1500">
                         <h4>High Resolution Photos</h4>
                         <Gallery photos={PHOTO_SET} downloadPhoto className='photoset' />
                     </Col>
@@ -34,11 +34,17 @@ export default class Epk extends Component {
                         <Button className='imageDLTwo' href='Images/carouselhr6.jpg' download="oldtimehoney1">Download Image 2</Button>
                         <Button className='imageDLTwo' href='Images/carouselhr1.jpg' download="oldtimehoney3">Download Image 3</Button>
                     </Col>
-                    <Col xs={12} sm={12} md={12} className="video-player">
+                    <Col xs={12} sm={12} md={12} className="video-player" data-aos="fade-up" data-aos-duration="1500">
                         <h4>Videos</h4>
+                        <div className="videos">
                         <ReactPlayer url='https://www.youtube.com/watch?v=L_jgAVDNSck&list=PLe8kmhXy6SYURMCILRRW57XLj_pzl3Hrh&index=3&t=0s' playing={false} className='photoset' />
+                        </div>
+                        <div className="videos">
                         <ReactPlayer url='https://www.youtube.com/watch?v=YCLbDtYMs3Y&list=PLe8kmhXy6SYURMCILRRW57XLj_pzl3Hrh&index=1' playing={false} className='photoset' />
+                        </div>
+                        <div className="videos">
                         <ReactPlayer url='https://www.youtube.com/watch?v=39Zh-dVX898&list=PLe8kmhXy6SYURMCILRRW57XLj_pzl3Hrh&index=4' playing={false} className='photoset' />
+                        </div>
                     </Col>
                     <Col className="epk-bios">
                         <h4>Bios Long & Short</h4>
@@ -60,7 +66,7 @@ export default class Epk extends Component {
                              the band's stage experience is varied and extensive. The band partnered with circus co-op "Cirquantique" from August until November of 2014 for the composition and production of "Bang! Bang! II" opening the band up to the wild world of circus which is now often included in their larger venue sets.
                               "Bang! Bang! II" gathered a lot of steam and was contracted to be performed October 16th & 17th 2015 in Saguenay by the production company "Les Productions Euphorie SENC" as well a performance at the historic Rialto Theatre in Montreal, with an encore performance in Saguenay the following year.
                               Having headlined the Kispiox Valley Music Festival in British Columbia for which a Travel Grant from Canada Council was received in 2014, the band headed out west once again to headline the Robson Valley Music Festival the following summer. Chosen in 2013, 2014, 2015 as one of Montreal's top ten busking bands
-                          and also in 2016 & 2017 as Montreal's top five folk bands by Cult Montreal, they certainly gaining exposure in their home town as well as nationally. Catch the release of the brand new album "Love songs for sick people" at Katacombs on October 11t, 2018.
+                          and also in 2016 & 2017 as Montreal's top five folk bands by Cult Montreal, they certainly gaining exposure in their home town as well as nationally. Catch the release of the brand new album "Love songs for sick people" at Katacombs on October 11t, 2018. <br />
                             SHORT: From the vibrant streets of Montreal to the big top circus, Old Time Honey seamlessly blend the sounds of old time, tin pan alley, and cabaret to create a very festive atmosphere with a theatrical touch. Played on hand made a washboard, banjo, piano, fiddle, upright bass, and tied together with hauntingly memorable vocal harmonies, these performers are as much fun to watch as to listen to!
                         </div>
                         </Collapse>
@@ -79,7 +85,7 @@ export default class Epk extends Component {
                                Le groupe s'est associé avec la compagnie de cirque "Cirquantique" d'août à novembre 2014 pour la composition et la production de "Bang! Bang! II" ouvrant le groupe au monde sauvage du cirque qui est maintenant souvent inclus dans leurs plus grands spectacles . "Bang! Bang! II" a rassemblé beaucoup de vapeur et a été contracté pour être interprété les 16 et 17 octobre 2015 à Saguenay par la compagnie de production
                                 "Les Productions Euphorie SENC" ainsi qu'une représentation au historique Théâtre Rialto à Montréal, avec un bis performance à Saguenay l'année suivante. Ayant headline le Kispiox Valley Music Festival en Colombie-Britannique pour lequel une subvention de voyage du Conseil des arts du Canada a été reçue en 2014, le groupe s'est de nouveau dirigé vers l'ouest pour présenter le
                                 Robson Valley Music Festival l'été suivant. Choisi en 2013, 2014, 2015 comme l'un des dix meilleurs groupes de musique de rue de Montréal et en 2016 et 2017 comme les cinq groupes folkloriques les plus populaires de Montréal par Cult Montréal, ils ont certainement gagné en visibilité dans leur ville natale et nationale.
-                              Le nouveau album "Love songs for sick people" sort le 11 octobre à Katacombs.
+                              Le nouveau album "Love songs for sick people" sort le 11 octobre à Katacombs. <br />
                             COURTE: Old Time Honey marie sans faille les sons rythmés de l’époche, de la musique old time, tin pan alley, et cabaret.
                                 Ces musiciens qui préservent et perpétuent la musique folk, donnent leurs représentations de par les rues trépignantes de Montréal en passant par les bars, les salles de spectacles, les spectacles de cirques, et les grands festivals.
                                 Avec Old Time Honey, l'authenticité, l'humour et une performance musicale dynamique sont au rendez-vous.
@@ -88,7 +94,7 @@ export default class Epk extends Component {
                         </Collapse>
 
                     </Col>
-                    <Col>
+                    <Col data-aos="fade-up" data-aos-duration="1500">
                         <h4>Press & reviews</h4>
                         <Gallery photos={PRESS_SET} className='photoset' />
                     </Col>
@@ -153,11 +159,6 @@ const PRESS_SET = [
     },
     {
         src: 'Images/oth_press8.jpg',
-        width: 2,
-        height: 3
-    },
-    {
-        src: 'Images/oth_press9.jpg',
         width: 2,
         height: 3
     },

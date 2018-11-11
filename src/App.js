@@ -13,10 +13,7 @@ import AOS from 'aos';
 
 
 class App extends Component {
-  constructor(){
-    super();
-    AOS.init();
-  }
+ 
   render() {
     return (
       <HashRouter>

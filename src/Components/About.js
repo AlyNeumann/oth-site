@@ -106,7 +106,7 @@ export default class About extends Component {
                     </Col>
                     <Clearfix visibleLgBlock visibleMdBlock>
                     </Clearfix>
-                    <Col className='band-details' data-aos="fade-up" data-aos-duration="1000">
+                    <Col className='band-details' data-aos="fade-up" data-aos-duration="1500">
                     <h4 className='language'>◈  English  ◈</h4>
                     <p>Organic and raw, taking it back to the streets where good music began by defining their own cabaret, jug band and tin pan alley sound. This artistic resurrection is a merry rebellion, 
                             born on the streets of Montreal, in the form of sultry piano and banjo (Aly), upright bass (Tyler), rocking and reeling violin riffs (Olive), layered on top of nostalgic washboard beats (Valentina). 
@@ -121,7 +121,7 @@ export default class About extends Component {
         
                     </p>
                     </Col>
-                    <Col className='band-details' data-aos="fade-up" data-aos-duration="1000">
+                    <Col className='band-details' data-aos="fade-up" data-aos-duration="1500">
                     <h4 className='language'>◈  Français  ◈</h4>
                     <p>Avec un son organique et nature, le groupe vous ramène aux sources de la bonne musique en définissant leur propre son - un mélange de cabaret, jug band et tin pan alley qu’on trouverais dans les années 1920.
                      Cette résurrection artistique arrive juste au bon moment… une joyeuse rebellion née dans les rues de Montreal, unissant un banjo et piano brulant (Aly), une contrebasse lancinante (Tyler), un violon en feu (Olive), 
