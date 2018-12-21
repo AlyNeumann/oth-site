@@ -25,15 +25,11 @@ export default class Epk extends Component {
         return (
             <Grid>
                 <Row className="show-grid text-center">
-                    <Col xs={12} sm={12} md={12} data-aos="fade-in" data-aos-duration="1500">
-                        <h4>High Resolution Photos</h4>
-                        <Gallery photos={PHOTO_SET} downloadPhoto className='photoset' />
+                <Col data-aos="fade-up" data-aos-duration="1500">
+                        <h4>Press & reviews</h4>
+                        <Gallery photos={PRESS_SET} className='photoset' />
                     </Col>
-                    <Col xs={12} sm={12} md={12} >
-                        <Button className='imageDL' href='Images/carouselhr3.jpg' download="oldtimehoney2">Download Image 1</Button>
-                        <Button className='imageDLTwo' href='Images/carouselhr6.jpg' download="oldtimehoney1">Download Image 2</Button>
-                        <Button className='imageDLTwo' href='Images/carouselhr1.jpg' download="oldtimehoney3">Download Image 3</Button>
-                    </Col>
+                  
                     <Col xs={12} sm={12} md={12} className="video-player" data-aos="fade-up" data-aos-duration="1500">
                         <h4>Videos</h4>
                         <div className="videos">
@@ -94,9 +90,14 @@ export default class Epk extends Component {
                         </Collapse>
 
                     </Col>
-                    <Col data-aos="fade-up" data-aos-duration="1500">
-                        <h4>Press & reviews</h4>
-                        <Gallery photos={PRESS_SET} className='photoset' />
+                    <Col xs={12} sm={12} md={12} >
+                        <Button className='imageDL' href='Images/carouselhr3.jpg' download="oldtimehoney2">Download Image 1</Button>
+                        <Button className='imageDLTwo' href='Images/carouselhr6.jpg' download="oldtimehoney1">Download Image 2</Button>
+                        <Button className='imageDLTwo' href='Images/carouselhr1.jpg' download="oldtimehoney3">Download Image 3</Button>
+                    </Col>
+                    <Col xs={12} sm={12} md={12} data-aos="fade-in" data-aos-duration="1500">
+                        <h4>High Resolution Photos</h4>
+                        <Gallery photos={PHOTO_SET} downloadPhoto className='photoset' />
                     </Col>
                 </Row>
             </Grid>

@@ -1,103 +1,55 @@
 import React, { Component } from 'react';
 import './Gallery.css';
-import { Carousel, Grid } from 'react-bootstrap';
 import Socialmedia from './Socialmedia';
 import Email from './Email';
+import Instafeed from 'react-instafeed';
+//this one is not working, need another way for icons
+import IosHeart from 'react-ionicons/lib/IosHeart';
+
+
+const INSTAGRAM_USER_ID = '3281702749';
+const INSTAGRAM_CLIENT_ID = '645e60bbdef1435d923316f2dd39b72b';
+const INSTAGRAM_ACCESS_TOKEN = '3281702749.1677ed0.cd42cef5e571422496e93a44b17be31b';
+
 
 export default class Gallery extends Component {
   render() {
-    return (
-      <Grid>
-        <Grid className="carousel-grid">
-          <Carousel pauseOnHover="true" wrap="true" className="carousel">
-            <Carousel.Item className="carousel-image">
-              <img width={900} height={500} alt="900x500" src="Images/carousel1.jpg" />
-              <Carousel.Caption className="carousel-caption">
-                <h3>The Band with Audrey</h3>
-                <p>Spring 2018 by Valentina Piras.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item className="carousel-image">
-              <img width={900} height={500} alt="900x500" src="Images/carousel2.jpg" />
-              <Carousel.Caption>
-                <h3>O Patro Vys</h3>
-                <p>Freaks & Burlesque Cabaret with History of Gun Powder.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item className="carousel-image">
-              <img width={900} height={500} alt="900x500" src="Images/carousel3.jpg" />
-              <Carousel.Caption>
-                <h3>Spring in Montreal</h3>
-                <p>Spring 2018 by Valentina Piras.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item className="carousel-image">
-              <img width={900} height={500} alt="900x500" src="Images/carousel4.jpg" />
-              <Carousel.Caption className="carousel-caption">
-                <h3>Theatre Saint Catherine</h3>
-                <p>Photo by Chloe Laëtitia.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item className="carousel-image">
-              <img width={900} height={500} alt="900x500" src="Images/carousel5.jpg" />
-              <Carousel.Caption className="carousel-caption">
-                <h3>Theatre Saint Catherine</h3>
-                <p>Photo of Esmeralda by Chloe Laëtitia.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item className="carousel-image">
-              <img width={900} height={500} alt="900x500" src="Images/carousel6.jpg" />
-              <Carousel.Caption className="carousel-caption">
-                <h3>The band</h3>
-                <p>By Valentina Piras.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item className="carousel-image">
-              <img width={900} height={500} alt="900x500" src="Images/carousel7.jpg" />
-              <Carousel.Caption className="carousel-caption">
-                <h3>O Patro Vys</h3>
-                <p>Lancement D'album d'Aleksi Campagne.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item className="carousel-image">
-              <img width={900} height={500} alt="900x500" src="Images/carousel8.jpg" />
-              <Carousel.Caption className="carousel-caption">
-                <h3>Fête Nationale</h3>
-                <p>La fête nationale de Quebec à Montréal.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item className="carousel-image">
-              <img width={900} height={500} alt="900x500" src="Images/carousel9.jpg" />
-              <Carousel.Caption className="carousel-caption">
-                <h3>Shazamfest!</h3>
-                <p>Shazamfest main stage.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item className="carousel-image">
-              <img width={900} height={500} alt="900x500" src="Images/carousel10.jpg" />
-              <Carousel.Caption className="carousel-caption">
-                <h3>Belle et Bum</h3>
-                <p>Photo par Claude Dufresne.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item className="carousel-image">
-              <img width={900} height={500} alt="900x500" src="Images/carousel11.jpg" />
-              <Carousel.Caption className="carousel-caption">
-                <h3>O Patro Vys</h3>
-                <p>Freaks & Burlesque Cabaret with History of Gun Powder.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item className="carousel-image">
-              <img width={900} height={500} alt="900x500" src="Images/carousel12.jpg" />
-              <Carousel.Caption className="carousel-caption">
-                <h3>O Patro Vys</h3>
-                <p>Freaks & Burlesque Cabaret with History of Gun Powder.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-          </Carousel>
-        </Grid>
-        <Socialmedia />
-        <Email />
-      </Grid>)
+    const instafeedTarget = 'instafeed';
+    return(<div className="instasocial" data-aos="fade-up" data-aos-duration="1500">
+      <div id={instafeedTarget} >
+      <Instafeed
+          limit='12'
+          ref='instafeed'
+          resolution='low_resolution'
+          sortBy='most-liked'
+          target={instafeedTarget}
+          template=' <div class="col-md-3  col-sm-6 service wow animated zoomIn " id="instafeed-gallery-feed">
+          <a class="instagram-image" href="{{link}}" target="_blank"><div class="img-featured-container">
+          <div class="img-backdrop"></div>         <div class="description-container">
+              <p class="caption">{{caption}}</p>
+              <span class="likes">
+              <ion-icon name="heart"></ion-icon>{{likes}}</span>
+              <span class="comments">
+              <ion-icon name="chatboxes"></ion-icon>{{comments}}
+              </span>
+              </div>
+              <img src="{{image}}" class="img-responsive">   
+     </div>
+       </a>
+   </div> '
+          userId={`${INSTAGRAM_USER_ID}`} 
+          clientId={`${INSTAGRAM_CLIENT_ID}`} 
+          accessToken={`${INSTAGRAM_ACCESS_TOKEN}`}
+          
+      />
+      </div>
+      <div data-aos="fade-up" data-aos-delay="2000">
+      <Socialmedia />
+      </div>
+      </div>)
   }
 }
+
+
+
+
