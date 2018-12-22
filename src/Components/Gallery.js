@@ -3,8 +3,7 @@ import './Gallery.css';
 import Socialmedia from './Socialmedia';
 import Email from './Email';
 import Instafeed from 'react-instafeed';
-//this one is not working, need another way for icons
-import IosHeart from 'react-ionicons/lib/IosHeart';
+
 
 
 const INSTAGRAM_USER_ID = '3281702749';
@@ -20,7 +19,7 @@ export default class Gallery extends Component {
       <Instafeed
           limit='12'
           ref='instafeed'
-          resolution='low_resolution'
+          resolution='standard_resolution'
           sortBy='most-liked'
           target={instafeedTarget}
           template=' <div class="col-md-3  col-sm-6 service wow animated zoomIn " id="instafeed-gallery-feed">
