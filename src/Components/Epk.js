@@ -26,6 +26,9 @@ export default class Epk extends Component {
             <Grid>
                 <Row className="show-grid text-center">
                 <Col data-aos="fade-up" data-aos-duration="1500">
+                        <h4>“Old Time Honey is proof that not only can music take a listener to another place, it can even transport them to a different time” -Brian, Bloody Underrated</h4>
+                        <h4>“Old Time Honey interprétait un air enjoué, bien que légèrement rugueux, un air qui n’aurait pas déparé dans le Berlin de Bretch et Dietrich” -Daniel Coté, Ma Presse</h4>
+                        <h4>◈◈◈</h4>
                         <h4>Press & reviews</h4>
                         <Gallery photos={PRESS_SET} className='photoset' />
                     </Col>
@@ -33,13 +36,16 @@ export default class Epk extends Component {
                     <Col xs={12} sm={12} md={12} className="video-player" data-aos="fade-up" data-aos-duration="1500">
                         <h4>Videos</h4>
                         <div className="videos">
-                        <ReactPlayer url='https://www.youtube.com/watch?v=L_jgAVDNSck&list=PLe8kmhXy6SYURMCILRRW57XLj_pzl3Hrh&index=3&t=0s' playing={false} className='photoset' />
+                        <ReactPlayer url='https://www.youtube.com/watch?v=XdvmywFizB0' playing={false} className='photoset' />
+                        </div>
+                        <div className="videos">
+                        <ReactPlayer url='https://youtu.be/WaUJo4SubE8' playing={false} className='photoset' />
+                        </div>
+                        <div className="videos">
+                        <ReactPlayer url='https://www.youtube.com/watch?v=if5QmtM9edc' playing={false} className='photoset' />
                         </div>
                         <div className="videos">
                         <ReactPlayer url='https://www.youtube.com/watch?v=YCLbDtYMs3Y&list=PLe8kmhXy6SYURMCILRRW57XLj_pzl3Hrh&index=1' playing={false} className='photoset' />
-                        </div>
-                        <div className="videos">
-                        <ReactPlayer url='https://www.youtube.com/watch?v=39Zh-dVX898&list=PLe8kmhXy6SYURMCILRRW57XLj_pzl3Hrh&index=4' playing={false} className='photoset' />
                         </div>
                     </Col>
                     <Col className="epk-bios">
@@ -90,14 +96,18 @@ export default class Epk extends Component {
                         </Collapse>
 
                     </Col>
-                    <Col xs={12} sm={12} md={12} >
-                        <Button className='imageDL' href='Images/carouselhr3.jpg' download="oldtimehoney2">Download Image 1</Button>
-                        <Button className='imageDLTwo' href='Images/carouselhr6.jpg' download="oldtimehoney1">Download Image 2</Button>
-                        <Button className='imageDLTwo' href='Images/carouselhr1.jpg' download="oldtimehoney3">Download Image 3</Button>
-                    </Col>
+                   
                     <Col xs={12} sm={12} md={12} data-aos="fade-in" data-aos-duration="1500">
                         <h4>High Resolution Photos</h4>
                         <Gallery photos={PHOTO_SET} downloadPhoto className='photoset' />
+                    </Col>
+                    <Col xs={12} sm={12} md={12} >
+                        <Button className='imageDL' href='Images/carouselhr3.jpg' download="oldtimehoney2">Download Image 1</Button>
+                        <Button className='imageDLTwo' href='Images/ALY11.jpg' download="oldtimehoney1">Download Image 2</Button>
+                        <Button className='imageDLTwo' href='Images/Aly7.jpg' download="oldtimehoney3">Download Image 3</Button>
+                    </Col>
+                    <Col xs={12} sm={12} md={12}>
+                    <Button className='stageplot' href='Images/othStagePlot2019.jpg' download="oldtimehoneyStageplot">Download Stage Plot</Button>
                     </Col>
                 </Row>
             </Grid>
@@ -111,12 +121,12 @@ const PHOTO_SET = [
         height: 3
     },
     {
-        src: 'Images/carouselhr6.jpg',
+        src: 'Images/ALY11.jpg',
         width: 3,
         height: 2
     },
     {
-        src: 'Images/carouselhr1.jpg',
+        src: 'Images/Aly7.jpg',
         width: 3,
         height: 2
     }

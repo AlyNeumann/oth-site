@@ -56,8 +56,8 @@
   opacity: 1;
 }
 
-/* 
-@media screen and (min-width:100px) {
+
+/* @media screen and (min-width:100px) {
   .img-featured-container .description-container .caption {
     display: block;
   }
@@ -71,11 +71,33 @@
   object-fit: cover;
 }
 
-/* .description-container {
+
+/* still not fully responsive for ipads  */
+/* these target iPad Pros */
+/* @media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
   
+}
+
+@media only screen
+and (min-device-width: 1112px)
+and (max-device-width: 1112px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+  display: block;
+}
+
+@media only screen
+and (min-device-width: 1366px)
+and (max-device-width: 1366px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+  display: block;
 } */
-/* 
-take this off until css problem solved
-.instasocial {
-  padding: 4em;
-} */
+.gallery-email-container{
+  margin-left:10em;
+  margin-right:10em;
+}

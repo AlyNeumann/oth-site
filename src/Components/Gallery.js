@@ -44,6 +44,9 @@ export default class Gallery extends Component {
       </div>
       <div data-aos="fade-up" data-aos-delay="2000">
       <Socialmedia />
+      <div className="gallery-email-container">
+      <Email />
+      </div>
       </div>
       </div>)
   }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { FormGroup, FormControl, ControlLabel } from 'react-bootstrap';
+import { FormGroup, FormControl, ControlLabel, Button } from 'react-bootstrap';
 import './Email.css'
+import SweetAlert from 'react-bootstrap-sweetalert';
 
 export default class Email extends Component {
     constructor(props, context) {
@@ -9,21 +10,55 @@ export default class Email extends Component {
         this.handleChange = this.handleChange.bind(this);
 
         this.state = {
-            value: ''
+            value: '',
+            alert: null
         };
     }
 
     getValidationState() {
         const str = this.state.value;
-        var n = str.includes("@")
+        var n = str.includes("@" && ".")
         if (n) return 'success';
         else if (str === '') return null;
-        else if (!n )return 'error';
+        else if (!n) return 'error';
         return null;
     }
 
     handleChange(e) {
+
         this.setState({ value: e.target.value });
+    }
+
+    handleEmailEntry = (e) => {
+        e.preventDefault();
+        this.renderSweetAlert();
+        this.setState({ value: '' })
+
+    }
+    renderSweetAlert = () => {
+        if(this.state.value){
+            const getAlert = () => (
+            <SweetAlert 
+              success 
+              title="Merci"
+              onConfirm={() => this.hideAlert()}
+            >
+            {this.state.value}!
+            </SweetAlert>
+          );
+      
+          this.setState({
+            alert: getAlert()
+          });
+        }
+        }
+        
+      
+        hideAlert() {
+          console.log('Hiding alert...');
+          this.setState({
+            alert: null
+          });
     }
 
     render() {
@@ -40,6 +75,8 @@ export default class Email extends Component {
                         placeholder="Enter Email Address"
                         onChange={this.handleChange}
                     />
+                    <Button onClick={this.handleEmailEntry}>Enter/Entrée</Button>
+                    {this.state.alert}
                     <FormControl.Feedback />
                 </FormGroup>
             </form>

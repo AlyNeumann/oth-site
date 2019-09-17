@@ -1,31 +1,53 @@
 
 
 .jumbotron {
+    margin-top:1em;
     margin-bottom: 4em;
-    color: black;
-    background-color:#bfefd5;
+    /* color: black; */
+    /* background-color:#bfefd5; */
+    /* background-image: url("/Images/AmericanBeeJournal.jpg"); */
+    background: linear-gradient(#faefdfcd, #c29d7dc1, transparent) no-repeat fixed, url("/Images/AmericanBeeJournal.jpg") fixed;
+/*     
+    filter: sepia(40%); */
     
 }
 .person-wrapper {
     margin-bottom: 2em;
+
 }
 .home-pic {
-    width: 22em;
+    width: 23em;
 }
-.logo {
-    width: 7em;
-    animation-name: logomove;
-    animation-duration: 3s;
-}
+
 @keyframes logomove {
    from { transform: translateX(900px)}
    to { transform: translateX(0px)}
 }
+.logo2 {
+    width: 50em;
+    height: auto;
+    display: flex;
+    filter: sepia(70%);
+    animation-name: logomove;
+    animation-duration: 3s;
+    margin-top: -20em;
+    margin-left: -8em;
+    margin-bottom: -7em;
+}
+.logo3 {
+    width: 2.5em;
+    margin-right:2em;
+    margin-bottom: 3em;
+    animation-name: logomove;
+    animation-duration: 5s;
+    filter: sepia(70%);
+}
 .btn-default {
+    margin-top: 3em;
     background-image: none;
     border: black;
     border-radius: 50;
-    background-color: #EDE7E7;
+    background-color: rgb(176, 240, 220);
     font-family: 'Poppins', sans-serif;
     border: 1px solid black;
     transition: 1s ease-in;

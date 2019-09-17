@@ -1,13 +1,16 @@
-.imageDL {
+.imageDL .stageplot {
     position: relative;
     padding: 1em;
     border-radius: 12px;
     
 }
-.imageDLTwo {
+.imageDLTwo .stageplot {
     padding: 1em;
     position: right;
     border-radius: 12px;
+}
+.stageplot {
+    margin-top: 1em;
 }
 .photoset {
     display: block;

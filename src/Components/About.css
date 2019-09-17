@@ -21,13 +21,13 @@
 h3 {
     margin-bottom: 1em;
 }
-#collapsible-panel {
+/* #collapsible-panel {
     background-color: #EDE7E7;
     font-family: 'Poppins', sans-serif;
     color: black;
     border: 2px solid black;
-}
-.panel-title {
+} */
+/* .panel-title {
     background-color: grey; 
     border-radius: 10%;
     border: thick double #9ECBAC;
@@ -39,7 +39,7 @@ h3 {
 
 .panel-toggle {
 background-color: pink;
-}
+} */
 .bio  {
     color: black;
     font-family: 'Poppins', sans-serif;
@@ -55,4 +55,32 @@ background-color: pink;
 .language {
     padding: 1em;
     border-bottom: 1px solid black;
+}
+.about-picture {
+    width: 100%;
+    height: auto;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+    opacity: 0.65;
+}
+.logo {
+    width: 6em;
+    margin-right:3em;
+    margin-bottom: 3em;
+    animation-name: logomove;
+    animation-duration: 5s;
+    filter: sepia(70%);
+}
+@keyframes logomove {
+   from { transform: translateX(900px)}
+   to { transform: translateX(0px)}
+}
+.animation-bee {
+    margin-top: 4em;
+    margin-left: 2.5em;
+    
+}
+.about-quotes {
+    margin: 4em;
 }
