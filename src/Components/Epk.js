@@ -2,26 +2,46 @@ import React, { Component } from 'react';
 import ReactPlayer from 'react-player'
 import Gallery from 'react-photo-gallery';
 import { Grid, Row, Col, Button, Collapse } from 'react-bootstrap';
+import Lightbox from 'react-image-lightbox';
+import 'react-image-lightbox/style.css';
 import './Epk.css';
+import Socialmedia from './Socialmedia';
+import Email from './Email';
 
 
 // const download = require('image-downloader')
 //downloadable highdef photos, videos, reviews, long & short bio
 
+const images = [
+    'Images/oth_press1.jpg',
+    'Images/oth_press2.jpg',
+    'Images/oth_press3.jpg',
+    'Images/oth_press4.jpg',
+    'Images/oth_press5.jpg',
+    'Images/oth_press6.jpg',
+    'Images/oth_press7.jpg',
+    'Images/oth_press8.jpg',
+    'Images/oth_press10.jpg'
+];
 
 export default class Epk extends Component {
     constructor(props, context) {
         super(props, context);
-
         this.state = {
             open: false,
-            openFr: false
+            openFr: false,
+            photoIndex: 0,
+            isOpen: false,
+           
         };
+        
     }
+    
 
     render() {
         const { open } = this.state;
         const { openFr } = this.state;
+        const { photoIndex, isOpen } = this.state;
         return (
             <Grid>
                 <Row className="show-grid text-center">
@@ -29,9 +49,39 @@ export default class Epk extends Component {
                         <h4>“Old Time Honey is proof that not only can music take a listener to another place, it can even transport them to a different time” -Brian, Bloody Underrated</h4>
                         <h4>“Old Time Honey interprétait un air enjoué, bien que légèrement rugueux, un air qui n’aurait pas déparé dans le Berlin de Bretch et Dietrich” -Daniel Coté, Ma Presse</h4>
                         <h4>◈◈◈</h4>
+                        </Col>
+
                         <h4>Press & reviews</h4>
-                        <Gallery photos={PRESS_SET} className='photoset' />
-                    </Col>
+                        
+                        <Gallery photos={PRESS_SET} className='press-set photoset' onClick={() => this.setState({ isOpen: true })} />
+                        <Row>
+                        <div>
+        {/* <button type="button" onClick={() => this.setState({ isOpen: true })}>
+          Open Lightbox
+        </button> */}
+ 
+        {isOpen && (
+          <Lightbox
+            mainSrc={images[photoIndex]}
+            nextSrc={images[(photoIndex + 1) % images.length]}
+            prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+            onCloseRequest={() => this.setState({ isOpen: false })}
+            onMovePrevRequest={() =>
+              this.setState({
+                photoIndex: (photoIndex + images.length - 1) % images.length,
+              })
+            }
+            onMoveNextRequest={() =>
+              this.setState({
+                photoIndex: (photoIndex + 1) % images.length,
+              })
+            }
+          />
+        )}
+      </div>
+                        </Row>
+                        
+                  
                   
                     <Col xs={12} sm={12} md={12} className="video-player" data-aos="fade-up" data-aos-duration="1500">
                         <h4>Videos</h4>
@@ -111,6 +161,10 @@ export default class Epk extends Component {
                     <Button className='stageplot' href='Images/othStagePlot2019.jpg' download="oldtimehoneyStageplot">Download Stage Plot</Button>
                     </Col>
                 </Row>
+                <Row>
+                    <Socialmedia/>
+                    <Email/>
+                </Row>
             </Grid>
         )
     }
@@ -137,7 +191,8 @@ const PRESS_SET = [
     {
         src: 'Images/oth_press1.jpg',
         width: 2,
-        height: 3
+        height: 3,
+        caption:"some info on article"
     },
     {
         src: 'Images/oth_press2.jpg',

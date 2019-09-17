@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(#f4d5a7a8, #98663bc1, transparent) no-repeat fixed, url("/Images/hive2.png") fixed;
-    background-color: rgba(191, 159, 123, 0.934)
+    background: linear-gradient(#ebd8badb, #836245fe, transparent) no-repeat fixed, url("/Images/hive2.png") fixed;
+    background-color: rgba(55, 34, 12, 0.303)
     /* background-size: cover; */
 }

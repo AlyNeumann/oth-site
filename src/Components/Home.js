@@ -27,8 +27,8 @@ export default class Home extends Component {
                     {/* <Image src="Images/beeClear.png" className="logo"/><Image src="Images/beeClear.png" className="logo"/><Image src="Images/beeClear.png" className="logo"/>
                     <Image src="Images/beeClear.png" className="logo"/><Image src="Images/beeClear.png" className="logo"/><Image src="Images/beeClear.png" className="logo"/><Image src="Images/beeClear.png" className="logo"/> */}
                     <Row className="home-type-text">
-                    <TypeWriter ><h3>New album "Love Songs for Sick People" now available!</h3></TypeWriter>
-                    <TypeWriter ><h3>Nouveau album "Love Songs for Sick People" maintenant disponible!</h3></TypeWriter>
+                    <TypeWriter ><h3>The album "Love Songs for Sick People" now available!</h3></TypeWriter>
+                    <TypeWriter ><h3>L'album "Love Songs for Sick People" maintenant disponible!</h3></TypeWriter>
                     </Row>
                      <Row className="home-button">
                         <Button bsStyle="default"  href="https://open.spotify.com/album/0EGPdRzJ517sC1o8rMfZ6Y">Spotify</Button>

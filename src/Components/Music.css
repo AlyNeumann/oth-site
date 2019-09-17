@@ -26,7 +26,7 @@
     display: flex;
     height: 280px;
     box-sizing: border-box;
-    background: rgba(143, 117, 46, 0.529);
+    background: rgba(148, 131, 84, 0.228);
     /* filter: sepia(100%); */
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -94,6 +94,7 @@
 .AlbumCover {
    margin-top:1em;
     width: 100%;
+    filter: sepia(90%);
 }
 .music-container {
   padding-bottom: 10em;

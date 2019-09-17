@@ -35,9 +35,7 @@ export default class About extends Component {
                     <Image src="Images/alywithtextborder.png" className="about-picture"/>
                     </Col>
 
-                    {/* <Clearfix visibleLgBlock visibleMdBlock>
-                    </Clearfix> */}
-                    <Col className='band-details' data-aos="fade-up" data-aos-duration="1500">
+                    <Col sm='12' sm='6' className='band-details' data-aos="fade-up" data-aos-duration="1500" >
                     <h4 className='language'>◈  English  ◈</h4>
                     <p>
                     From the vibrant streets of Montreal, Old Time Honey is the name of the musical project of Saskatchewan raised folky Aly Marguerite, who comes from a background of classical and punk music. She mixes her love of romantic era classical piano with old time folk, often collaborating with circus performers. 
@@ -45,7 +43,7 @@ export default class About extends Component {
         
                     </p>
                     </Col>
-                    <Col className='band-details' data-aos="fade-up" data-aos-duration="1500">
+                    <Col  sm='12' sm='6' className='band-details' data-aos="fade-up" data-aos-duration="1500">
                     <h4 className='language'>◈  Français  ◈</h4>
                     <p>
                     Des rues animées de Montréal, Old Time Honey est le nom du projet musical de la Saskatchewanaise Aly Marguerite, qui vient d'une formation de musique classique et punk. Elle mélange son amour du piano classique de l'époque romantique avec le folk “old time” souvent en collaboration avec des artistes de cirque. 

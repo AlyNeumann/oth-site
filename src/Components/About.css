@@ -49,12 +49,19 @@ background-color: pink;
 }
 .band-details {
     font-family: 'Poppins', sans-serif;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     align-items: center;
+    /* background: linear-gradient(#f5e9d5f9, #d5a67efe, transparent) no-repeat fixed; */
+    margin-bottom:6em;
+    border-radius: 10%;
+    margin-top: 3em;
+    border-bottom: 1px solid black;
 }
 .language {
     padding: 1em;
     border-bottom: 1px solid black;
+    border-radius: 10%;
 }
 .about-picture {
     width: 100%;
