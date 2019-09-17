@@ -36,18 +36,19 @@ export default class Epk extends Component {
                     <Col xs={12} sm={12} md={12} className="video-player" data-aos="fade-up" data-aos-duration="1500">
                         <h4>Videos</h4>
                         <div className="videos">
-                        <ReactPlayer url='https://www.youtube.com/watch?v=XdvmywFizB0' playing={false} className='photoset' />
+                        <ReactPlayer url='https://www.youtube.com/watch?v=XdvmywFizB0' className='photoset' width={"100%"} height={"100%"} light={true} controls={true} />
                         </div>
                         <div className="videos">
-                        <ReactPlayer url='https://youtu.be/WaUJo4SubE8' playing={false} className='photoset' />
+                        <ReactPlayer url='https://youtu.be/WaUJo4SubE8' className='photoset' width={"100%"} height={"100%"} light={true} controls={true} />
                         </div>
                         <div className="videos">
-                        <ReactPlayer url='https://www.youtube.com/watch?v=if5QmtM9edc' playing={false} className='photoset' />
+                        <ReactPlayer url='https://www.youtube.com/watch?v=if5QmtM9edc' className='photoset' width={"100%"} height={"100%"} light={true} controls={true} />
                         </div>
                         <div className="videos">
-                        <ReactPlayer url='https://www.youtube.com/watch?v=YCLbDtYMs3Y&list=PLe8kmhXy6SYURMCILRRW57XLj_pzl3Hrh&index=1' playing={false} className='photoset' />
+                        <ReactPlayer url='https://www.youtube.com/watch?v=YCLbDtYMs3Y&list=PLe8kmhXy6SYURMCILRRW57XLj_pzl3Hrh&index=1' className='photoset' width={"100%"} height={"100%"} light={true} controls={true} />
                         </div>
                     </Col>
+                    
                     <Col className="epk-bios">
                         <h4>Bios Long & Short</h4>
                         <Button

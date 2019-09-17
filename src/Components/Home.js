@@ -15,21 +15,26 @@ export default class Home extends Component {
             <Grid className="home-page">
                 <Jumbotron>
                     {/* <h2>◈Old Time Honey</h2> */}
+                    <Row className="logo2-container"> 
                     <Image src="Images/oth_LOGO2018.png" className="logo2"/>
-                    <Image src="Images/pearl.png" className="logo3"/><Image src="Images/pearl.png" className="logo3"/><Image src="Images/pearl.png" className="logo3"/>
-                    <Image src="Images/pearl.png" className="logo3"/><Image src="Images/pearl.png" className="logo3"/><Image src="Images/pearl.png" className="logo3"/>
-                    <Image src="Images/pearl.png" className="logo3"/>
+                    </Row>
+                    <Row className="pearl-container">
+                        
+                    {/* <Image src="Images/pearls.png" className="logo3"/>
+             */}
+                    </Row>
                     
                     {/* <Image src="Images/beeClear.png" className="logo"/><Image src="Images/beeClear.png" className="logo"/><Image src="Images/beeClear.png" className="logo"/>
                     <Image src="Images/beeClear.png" className="logo"/><Image src="Images/beeClear.png" className="logo"/><Image src="Images/beeClear.png" className="logo"/><Image src="Images/beeClear.png" className="logo"/> */}
-                    
+                    <Row className="home-type-text">
                     <TypeWriter ><h3>New album "Love Songs for Sick People" now available!</h3></TypeWriter>
                     <TypeWriter ><h3>Nouveau album "Love Songs for Sick People" maintenant disponible!</h3></TypeWriter>
-                     
-                        <Button bsStyle="default" href="https://open.spotify.com/album/0EGPdRzJ517sC1o8rMfZ6Y">Spotify</Button>
-                        <Button bsStyle="default" href="https://oldtimehoney.bandcamp.com/">BandCamp</Button>
+                    </Row>
+                     <Row className="home-button">
+                        <Button bsStyle="default"  href="https://open.spotify.com/album/0EGPdRzJ517sC1o8rMfZ6Y">Spotify</Button>
+                        <Button bsStyle="default"  href="https://oldtimehoney.bandcamp.com/">BandCamp</Button>
                         
-                        
+                        </Row>
                     
                 </Jumbotron>
                 {/* <Row>

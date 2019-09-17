@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Row} from 'react-bootstrap';
 import './Gallery.css';
 import Socialmedia from './Socialmedia';
 import Email from './Email';
@@ -44,9 +45,9 @@ export default class Gallery extends Component {
       </div>
       <div data-aos="fade-up" data-aos-delay="2000">
       <Socialmedia />
-      <div className="gallery-email-container">
+      <Row className="gallery-email-container">
       <Email />
-      </div>
+      </Row>
       </div>
       </div>)
   }

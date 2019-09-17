@@ -11,37 +11,36 @@
     filter: sepia(40%); */
     
 }
-.person-wrapper {
+/* .person-wrapper {
     margin-bottom: 2em;
 
 }
 .home-pic {
     width: 23em;
-}
+} */
 
 @keyframes logomove {
    from { transform: translateX(900px)}
    to { transform: translateX(0px)}
 }
 .logo2 {
-    width: 50em;
+    width: 90%;
     height: auto;
+    margin-top:-10%;
+    margin-bottom: -5em;
     display: flex;
     filter: sepia(70%);
     animation-name: logomove;
     animation-duration: 3s;
-    margin-top: -20em;
-    margin-left: -8em;
-    margin-bottom: -7em;
+
 }
-.logo3 {
-    width: 2.5em;
-    margin-right:2em;
-    margin-bottom: 3em;
+/* .logo3 {
+    width: 100%;
+    margin:1em;
     animation-name: logomove;
     animation-duration: 5s;
     filter: sepia(70%);
-}
+} */
 .btn-default {
     margin-top: 3em;
     background-image: none;
@@ -56,6 +55,9 @@
 .btn-default:hover {
     background: #F4CCC3;
 }
+.home-button{
+    text-align: center;
+}
 
 .home-page {
     /* background-color: antiquewhite; */
@@ -64,6 +66,9 @@
 h3 {
     font-family: 'Special Elite', cursive;
     margin-bottom: 1em;
+    /* margin-left: 1em; */
+    font-size:2.3vw;
+    
 }
 h2 {
     font-family: 'Limelight', cursive;
@@ -82,3 +87,12 @@ h4{
       opacity: 1;
     }
   }
+.logo2-container{
+    margin:1em;
+}
+
+.home-type-text{
+    /* width:70%; */
+    height:auto;
+    text-align: center;
+}

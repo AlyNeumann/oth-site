@@ -10,7 +10,7 @@
     border-radius: 12px;
 }
 .stageplot {
-    margin-top: 1em;
+    margin-top: 3em;
 }
 .photoset {
     display: block;
@@ -24,7 +24,14 @@
 }
 .video-player {
     padding: 3em;
+    position: relative;
 }
+
 .videos {
     padding: 2em;
-}
+} 
+/* .react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+  } */

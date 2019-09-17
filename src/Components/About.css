@@ -78,7 +78,9 @@ background-color: pink;
 }
 .animation-bee {
     margin-top: 4em;
-    margin-left: 2.5em;
+    margin-left: 1.45em;
+    width: 100%;
+    height: auto;
     
 }
 .about-quotes {

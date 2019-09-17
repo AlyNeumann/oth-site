@@ -19,9 +19,9 @@ export default class About extends Component {
             <Grid>
                 <Row className="show-grid text-center"></Row>
                 <Row className="show-grid text-center">
-                    <Col className="animation-bee">
+                    <Row className="animation-bee">
                         <Image src="Images/beefront.png" className="logo"/><Image src="Images/beefront.png" className="logo"/><Image src="Images/beefront.png" className="logo"/><Image src="Images/beefront.png" className="logo"/><Image src="Images/beefront.png" className="logo"/><Image src="Images/beefront.png" className="logo"/><Image src="Images/beefront.png" className="logo"/>
-                    </Col>
+                    </Row>
                     <Col data-aos="fade-left" className="about-quotes">
                         <h4>
                             “Old Time Honey is proof that not only can music take a listener to another place, it can even transport them to a different time” - Brian, Bloody Underrated

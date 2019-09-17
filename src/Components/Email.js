@@ -11,7 +11,8 @@ export default class Email extends Component {
 
         this.state = {
             value: '',
-            alert: null
+            alert: null,
+            name:''
         };
     }
 
@@ -23,6 +24,13 @@ export default class Email extends Component {
         else if (!n) return 'error';
         return null;
     }
+    getName(){
+        let email = this.state.value
+        let result = email.split('@')
+        console.log(result[0]);
+        this.setState({ name: result});
+        
+    }
 
     handleChange(e) {
 
@@ -31,19 +39,23 @@ export default class Email extends Component {
 
     handleEmailEntry = (e) => {
         e.preventDefault();
-        this.renderSweetAlert();
         this.setState({ value: '' })
+        this.getName();
+        this.renderSweetAlert();
 
+       
     }
     renderSweetAlert = () => {
+        
+
         if(this.state.value){
             const getAlert = () => (
             <SweetAlert 
               success 
-              title="Merci"
+              title="Merci!"
               onConfirm={() => this.hideAlert()}
             >
-            {this.state.value}!
+            {/* {this.state.name[0]}! */}
             </SweetAlert>
           );
       
