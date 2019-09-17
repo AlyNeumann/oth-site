@@ -7,3 +7,18 @@
     padding: 1em;
     border-bottom: 1px solid black;
 }
+
+.btn-shows{
+    margin: 1em;
+    background-image: none;
+    border: black;
+    border-radius: 50;
+    background-color: rgb(176, 240, 220);
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid black;
+    transition: 1s ease-in;
+}
+
+.btn-shows:hover {
+    background: #F4CCC3;
+}
